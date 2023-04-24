@@ -7,7 +7,6 @@ export const addUser = async (req, res) => {
 
   try {
     await newUser.save();
-    console.log("seccessfully added user");
     res.status(201).json(newUser);
   } catch (error) {
     console.log("user adding error: " + error);
@@ -48,7 +47,6 @@ const editUser = new User(user);
 export const deleteUser = async (req, res) => {
   
   try {
-    console.log("deletting user")
     const user = await User.deleteOne({ _id: req.params.id });
     res.status(201).json(user);
   } catch (error) {

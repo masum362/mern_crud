@@ -14,15 +14,11 @@ app.use(express.json());
 app.use("/",router)
 
 
-
-
-
 const PORT = 2001
 
-const username = process.env.DB_USERNAME
-const password = process.env.DB_PASSWORD
+const url = process.env.DB_URL
 
-connection(username,password )
+connection(url )
 
 app.listen(PORT , (req,res)=>{
 
