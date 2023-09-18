@@ -1,0 +1,210 @@
+section {
+    width: 100%;
+    padding: 10px;
+    min-height: calc(100vh - 80px);
+}
+
+section .form_data {
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 35px 10px;
+    box-shadow: 0 0 15px -10px #2d3748;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_data h1 {
+    font-size: 34px;
+    color: #E70801;
+}
+
+.form_data p {
+    color: #1D5D20;
+    font-size: 15px;
+    margin-top: 9px;
+}
+
+.form_data form {
+    margin-top: 45px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.form_data form .form_input input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d4d0d0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 14px;
+    margin-top: 9px;
+    font-size: 14px;
+
+}
+
+.form_data form .form_input label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1D5D20;
+}
+
+.form_input .two {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form_data form .form_input input:focus {
+    border: 2px solid #1D5D20;
+}
+
+
+.form_data form .form_input input::placeholder {
+    color: #1D5D20;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.form_input .showpass {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    padding: 7px 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D5D20;
+    background-color: #EDF2F7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #E70801;
+    color: #07d111;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+form .btn:hover {
+    background-color: #31da3a;
+    color: #E70801;
+}
+
+.form_data form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_data form a {
+    text-decoration: none;
+    color: #1D5D20;
+    border-bottom: 2px solid #E70801;
+}
+
+
+.profile {
+    text-align: center;
+    background-color: #290404;
+    color: rgb(37, 204, 37);
+    padding: 5px;
+    font-size: 20px;
+
+
+}
+
+.test{
+    background-color: #19ad32;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: myAnim 3s ease 0s  normal forwards;
+    width: 300px;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+    z-index: 1;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+
+}
+
+
+@keyframes myAnim {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.main-sect{
+    position: relative;
+  
+}
+.img1{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.user-div{
+    
+    width: 50%;
+    height: auto;
+    background-color: rgb(62, 85, 8);
+    margin: auto ;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.user-img{
+    margin: auto;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+.user-details{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.user-name{
+    font-size: 20px;
+    color: white;
+}
+.user-email{
+    font-size: 20px;
+    color: white;
+}
